@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Login.css" media="screen" />
+    <title>Login</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="src/app.js" defer></script>
+</head>
+<body>
+    <selection class="area-Login">
+        <div class="Login">
+            <div>
+                <img src="Imagem_do_WhatsApp_de_2023-05-18_à_s__22.18.54-removebg-preview.png">
+                <h2>Cliente</h2>
+            </div>
+            <div id="app">
+                <form id="app-form">
+                    <input type="text" v-model="input_name" placeholder="nome de usuario" autofocus>
+                    <input type="password" placeholder="senha">
+                    <input type="submit" value="Entrar"
+                    v-on:click="submitForm">Bem-Vindo: {{ input_name}}
+                </form>            </div>
+            <p>Não possui uma conta?     <a href="cadastro.html">    Criar conta</a> </p>
+                
+        </div>
+    </selection>
+    
+</body>
+</html>
